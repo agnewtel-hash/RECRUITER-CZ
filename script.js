@@ -35,3 +35,24 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     observer.observe(el);
   });
 }
+
+const phoneDialog = document.getElementById('phone-choice');
+const phoneClose = phoneDialog.querySelector('.phone-dialog-close');
+let lastPhoneTrigger = null;
+document.querySelectorAll('.phone-choice-trigger').forEach(trigger => {
+  trigger.addEventListener('click', event => {
+    event.preventDefault();
+    lastPhoneTrigger = trigger;
+    if (nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    if (!phoneDialog.open) phoneDialog.showModal();
+  });
+});
+phoneClose.addEventListener('click', () => phoneDialog.close());
+phoneDialog.addEventListener('click', event => {
+  if (event.target === phoneDialog) phoneDialog.close();
+});
+phoneDialog.addEventListener('close', () => lastPhoneTrigger?.focus());
