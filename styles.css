@@ -31,3 +31,9 @@
 .job-card,.job-card.featured,.job-card.wide{background-size:100% 100%,contain;background-repeat:no-repeat;background-position:center,center;background-color:#10283a}
 
 .contact-email{display:block;margin:3px 0 24px;font-size:clamp(16px,2vw,21px);font-weight:700;color:var(--navy);overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:4px}.contact-email:hover{color:#a87900}
+
+.facebook-vacancies{display:flex;align-items:center;gap:14px;margin:18px 0 20px;padding:14px 16px;border:1px solid #cbd9ec;border-radius:14px;background:#f4f8ff;color:#183b72;text-decoration:none;transition:background .2s,border-color .2s}
+.facebook-vacancies:hover{background:#e9f1ff;border-color:#1877f2}
+.facebook-vacancies .facebook-icon{flex:none;display:grid;place-items:center;width:43px;height:43px;border-radius:11px;background:#1877f2;color:#fff;font-family:Arial,sans-serif;font-size:32px;font-weight:bold;line-height:1;padding-top:7px}
+.facebook-vacancies strong{display:block;font-size:16px}
+.facebook-vacancies small{display:block;margin-top:3px;color:#425a78;font-size:13px;line-height:1.45}
