@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=phone-choice-1">
+  <link rel="stylesheet" href="styles.css?v=channel-choice-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти до змісту</a>
@@ -118,8 +118,8 @@
           <small>Україна</small><a class="phone" href="tel:+380505159060">+380 50 515 9060</a>
           <div class="messengers">
             <a class="whatsapp whatsapp-choice-trigger" href="#whatsapp-choice" aria-label="Обрати номер WhatsApp для дзвінка"><span>W</span> WhatsApp</a>
-            <a class="viber" href="https://invite.viber.com/?g2=AQA3bhbA5G6rPlNubzm1%2B5437977ThaTOvlOCEpkALLqwC5fVQCvO8iiJjsHHYta" target="_blank" rel="noopener noreferrer" aria-label="Написати RECRUITER CZ у Viber"><span>V</span> Viber</a>
-            <a class="telegram" href="https://t.me/robota_v_cehiji" target="_blank" rel="noopener" aria-label="Написати RECRUITER CZ у Telegram"><span>T</span> Telegram</a>
+            <a class="viber channel-choice-trigger" href="#viber-choice" aria-label="Обрати дію Viber"><span>V</span> Viber</a>
+            <a class="telegram channel-choice-trigger" href="#telegram-choice" aria-label="Обрати дію Telegram"><span>T</span> Telegram</a>
           </div>
           <p>Зазвичай відповідаємо в робочий час.</p>
         </div>
@@ -155,6 +155,24 @@
       <a href="https://wa.me/380505159060" target="_blank" rel="noopener noreferrer" class="phone-option"><span>🇺🇦 Україна</span><strong>+380 50 515 9060</strong></a>
     </div>
   </dialog>
-  <script src="script.js?v=whatsapp-choice-1"></script>
+  <dialog id="viber-choice" class="phone-dialog channel-dialog" aria-labelledby="viber-choice-title">
+    <div class="phone-dialog-inner">
+      <button class="phone-dialog-close" type="button" aria-label="Закрити">×</button>
+      <h2 id="viber-choice-title">Viber — оберіть дію</h2>
+      <p>Переглянути оголошення про роботу або зателефонувати нам.</p>
+      <a class="phone-option" href="https://invite.viber.com/?g2=AQA3bhbA5G6rPlNubzm1%2B5437977ThaTOvlOCEpkALLqwC5fVQCvO8iiJjsHHYta" target="_blank" rel="noopener noreferrer"><strong>📢 Перейти до оголошень</strong><span>Відкрити групу Viber</span></a>
+      <button type="button" class="phone-option choose-call"><strong>☎ Зателефонувати</strong><span>Обрати номер Чехії або України</span></button>
+    </div>
+  </dialog>
+  <dialog id="telegram-choice" class="phone-dialog channel-dialog" aria-labelledby="telegram-choice-title">
+    <div class="phone-dialog-inner">
+      <button class="phone-dialog-close" type="button" aria-label="Закрити">×</button>
+      <h2 id="telegram-choice-title">Telegram — оберіть дію</h2>
+      <p>Переглянути оголошення про роботу або зателефонувати нам.</p>
+      <a class="phone-option" href="https://t.me/robota_v_cehiji" target="_blank" rel="noopener noreferrer"><strong>📢 Перейти до оголошень</strong><span>Відкрити канал Telegram</span></a>
+      <button type="button" class="phone-option choose-call"><strong>☎ Зателефонувати</strong><span>Обрати номер Чехії або України</span></button>
+    </div>
+  </dialog>
+  <script src="script.js?v=channel-choice-1"></script>
 </body>
 </html>
