@@ -19,7 +19,7 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   document.body.style.overflow = '';
 }));
 
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent = '2021';
 
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver(entries => {
