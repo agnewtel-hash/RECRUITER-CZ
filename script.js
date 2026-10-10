@@ -68,3 +68,20 @@ whatsappDialog.querySelector('.phone-dialog-close').addEventListener('click', ()
 whatsappDialog.addEventListener('click', event => {
   if (event.target === whatsappDialog) whatsappDialog.close();
 });
+
+document.querySelectorAll('.channel-choice-trigger').forEach(trigger => {
+  const dialog = document.querySelector(trigger.getAttribute('href'));
+  trigger.addEventListener('click', event => {
+    event.preventDefault();
+    dialog.showModal();
+  });
+  dialog.querySelector('.phone-dialog-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.querySelector('.choose-call').addEventListener('click', () => {
+    dialog.close();
+    lastPhoneTrigger = trigger;
+    phoneDialog.showModal();
+  });
+});
