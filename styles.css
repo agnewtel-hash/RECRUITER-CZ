@@ -12,3 +12,17 @@
 
 .channel-dialog .choose-call{width:100%;text-align:left;background:#fff;font-family:inherit;cursor:pointer}
 .channel-dialog .choose-call:hover,.channel-dialog .choose-call:focus-visible{background:#fff8df}
+
+/* Photo-led vacancy gallery */
+.vacancies{background:#f3f6f8}
+.vacancy-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.job-card,.job-card.featured,.job-card.wide{position:relative;isolation:isolate;overflow:hidden;min-height:345px;grid-column:auto;border:0;border-radius:16px;padding:25px;color:#fff;background-color:#16344a;background-image:linear-gradient(180deg,rgba(3,16,27,.12) 8%,rgba(3,16,27,.42) 45%,rgba(3,16,27,.96) 100%),var(--job-image);background-size:cover;background-position:center;box-shadow:0 12px 30px rgba(8,31,47,.13);transition:transform .3s ease,box-shadow .3s ease}
+.job-card:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(8,31,47,.23)}
+.job-card .job-icon,.job-card.featured .job-icon{width:46px;height:46px;margin-bottom:auto;background:rgba(5,23,38,.72);border:1.5px solid #fff;color:#fff;backdrop-filter:blur(5px)}
+.job-card small{color:#f5d269;font-size:11px;font-weight:800;margin-top:18px}
+.job-card h3{font-size:clamp(23px,2vw,30px);line-height:1.15;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.job-card p,.job-card.featured p{font-size:13px;line-height:1.5;color:#f2f6f9;margin:8px 0 20px;text-shadow:0 1px 4px rgba(0,0,0,.45)}
+.job-card b,.job-card.featured b{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;margin-top:0;padding:12px 17px;border-radius:999px;background:#ffc928;color:#10283a;font-size:12px;font-weight:800;box-shadow:0 5px 15px rgba(0,0,0,.2)}
+.job-card:focus-visible{outline:3px solid #ffc928;outline-offset:3px}
+@media(max-width:900px){.vacancy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.vacancy-grid{grid-template-columns:1fr}.job-card,.job-card.featured,.job-card.wide{min-height:335px;padding:24px}.job-card h3{font-size:26px}}
