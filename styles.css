@@ -9,3 +9,6 @@
 .phone-option{display:flex;flex-direction:column;gap:5px;padding:16px;margin-top:12px;border:1px solid #dbe1e6;border-radius:12px;text-decoration:none;color:#0a2540}
 .phone-option:hover,.phone-option:focus-visible{border-color:#e6ae00;background:#fff8df}
 .phone-option span{font-size:13px}.phone-option strong{font-size:20px}
+
+.channel-dialog .choose-call{width:100%;text-align:left;background:#fff;font-family:inherit;cursor:pointer}
+.channel-dialog .choose-call:hover,.channel-dialog .choose-call:focus-visible{background:#fff8df}
