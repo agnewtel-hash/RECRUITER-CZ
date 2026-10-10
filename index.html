@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=white-logo-2">
+  <link rel="stylesheet" href="styles.css?v=phone-choice-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти до змісту</a>
@@ -25,7 +25,7 @@
         <a href="#vacancies">Вакансії</a>
         <a href="#employers">Роботодавцям</a>
         <a href="#contacts">Контакти</a>
-        <a class="nav-cta" href="tel:+420774178900">Зателефонувати</a>
+        <a class="nav-cta phone-choice-trigger" href="#phone-choice">Зателефонувати</a>
       </nav>
     </div>
   </header>
@@ -96,7 +96,7 @@
           <span class="eyebrow light">Для роботодавців</span>
           <h2>Працівники, на яких можна покластися</h2>
           <p>Беремо на себе пошук і первинний відбір кандидатів, щоб ваша команда швидше отримала потрібних людей.</p>
-          <a class="btn btn-primary" href="tel:+420774178900">Обговорити потребу <span>→</span></a>
+          <a class="btn btn-primary phone-choice-trigger" href="#phone-choice">Обговорити потребу <span>→</span></a>
         </div>
         <div class="process">
           <article><b>01</b><div><h3>Аналіз потреби</h3><p>Уточнюємо профіль, обсяг роботи, графік та очікування.</p></div></article>
@@ -136,7 +136,16 @@
     <div class="container copyright"><span>© <span id="year"></span> RECRUITER CZ</span><span>Працевлаштування та рекрутинг у Чехії</span></div>
   </footer>
 
-  <a class="floating-call" href="tel:+420774178900" aria-label="Зателефонувати RECRUITER CZ">☎</a>
-  <script src="script.js"></script>
+  <a class="floating-call phone-choice-trigger" href="#phone-choice" aria-label="Зателефонувати RECRUITER CZ">☎</a>
+  <dialog id="phone-choice" class="phone-dialog" aria-labelledby="phone-dialog-title">
+    <div class="phone-dialog-inner">
+      <button class="phone-dialog-close" type="button" aria-label="Закрити">×</button>
+      <h2 id="phone-dialog-title">Оберіть номер телефону</h2>
+      <p>Натисніть на номер, щоб зателефонувати.</p>
+      <a href="tel:+420774178900" class="phone-option"><span>🇨🇿 Чехія</span><strong>+420 774 178 900</strong></a>
+      <a href="tel:+380505159060" class="phone-option"><span>🇺🇦 Україна</span><strong>+380 50 515 9060</strong></a>
+    </div>
+  </dialog>
+  <script src="script.js?v=phone-choice-1"></script>
 </body>
 </html>
