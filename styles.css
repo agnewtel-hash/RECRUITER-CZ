@@ -29,3 +29,5 @@
 
 /* Preserve uploaded vacancy photos within equal-size cards */
 .job-card,.job-card.featured,.job-card.wide{background-size:100% 100%,contain;background-repeat:no-repeat;background-position:center,center;background-color:#10283a}
+
+.contact-email{display:block;margin:3px 0 24px;font-size:clamp(16px,2vw,21px);font-weight:700;color:var(--navy);overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:4px}.contact-email:hover{color:#a87900}
