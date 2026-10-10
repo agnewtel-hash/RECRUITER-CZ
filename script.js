@@ -56,3 +56,15 @@ phoneDialog.addEventListener('click', event => {
   if (event.target === phoneDialog) phoneDialog.close();
 });
 phoneDialog.addEventListener('close', () => lastPhoneTrigger?.focus());
+
+const whatsappDialog = document.getElementById('whatsapp-choice');
+document.querySelectorAll('.whatsapp-choice-trigger').forEach(trigger => {
+  trigger.addEventListener('click', event => {
+    event.preventDefault();
+    if (!whatsappDialog.open) whatsappDialog.showModal();
+  });
+});
+whatsappDialog.querySelector('.phone-dialog-close').addEventListener('click', () => whatsappDialog.close());
+whatsappDialog.addEventListener('click', event => {
+  if (event.target === whatsappDialog) whatsappDialog.close();
+});
