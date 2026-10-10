@@ -26,3 +26,6 @@
 .job-card:focus-visible{outline:3px solid #ffc928;outline-offset:3px}
 @media(max-width:900px){.vacancy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.vacancy-grid{grid-template-columns:1fr}.job-card,.job-card.featured,.job-card.wide{min-height:335px;padding:24px}.job-card h3{font-size:26px}}
+
+/* Preserve uploaded vacancy photos within equal-size cards */
+.job-card,.job-card.featured,.job-card.wide{background-size:100% 100%,contain;background-repeat:no-repeat;background-position:center,center;background-color:#10283a}
