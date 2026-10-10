@@ -117,7 +117,7 @@
           <small>Чехія</small><a class="phone" href="tel:+420774178900">+420 774 178 900</a>
           <small>Україна</small><a class="phone" href="tel:+380505159060">+380 50 515 9060</a>
           <div class="messengers">
-            <a class="whatsapp" href="https://wa.me/420774178900?text=%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D0%B3%D0%BE%20%D0%B4%D0%BD%D1%8F!%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B7%20%D1%81%D0%B0%D0%B9%D1%82%D1%83%20RECRUITER%20CZ." target="_blank" rel="noopener" aria-label="Написати RECRUITER CZ у WhatsApp"><span>W</span> WhatsApp</a>
+            <a class="whatsapp whatsapp-choice-trigger" href="#whatsapp-choice" aria-label="Обрати номер WhatsApp для дзвінка"><span>W</span> WhatsApp</a>
             <a class="viber" href="https://invite.viber.com/?g2=AQA3bhbA5G6rPlNubzm1%2B5437977ThaTOvlOCEpkALLqwC5fVQCvO8iiJjsHHYta" target="_blank" rel="noopener noreferrer" aria-label="Написати RECRUITER CZ у Viber"><span>V</span> Viber</a>
             <a class="telegram" href="https://t.me/robota_v_cehiji" target="_blank" rel="noopener" aria-label="Написати RECRUITER CZ у Telegram"><span>T</span> Telegram</a>
           </div>
@@ -146,6 +146,15 @@
       <a href="tel:+380505159060" class="phone-option"><span>🇺🇦 Україна</span><strong>+380 50 515 9060</strong></a>
     </div>
   </dialog>
-  <script src="script.js?v=phone-choice-1"></script>
+  <dialog id="whatsapp-choice" class="phone-dialog" aria-labelledby="whatsapp-dialog-title">
+    <div class="phone-dialog-inner">
+      <button class="phone-dialog-close" type="button" aria-label="Закрити">×</button>
+      <h2 id="whatsapp-dialog-title">Оберіть номер WhatsApp</h2>
+      <p>Оберіть країну. У WhatsApp відкриється контакт або чат — натисніть значок телефону, щоб зателефонувати.</p>
+      <a href="https://wa.me/420774178900" target="_blank" rel="noopener noreferrer" class="phone-option"><span>🇨🇿 Чехія</span><strong>+420 774 178 900</strong></a>
+      <a href="https://wa.me/380505159060" target="_blank" rel="noopener noreferrer" class="phone-option"><span>🇺🇦 Україна</span><strong>+380 50 515 9060</strong></a>
+    </div>
+  </dialog>
+  <script src="script.js?v=whatsapp-choice-1"></script>
 </body>
 </html>
