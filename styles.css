@@ -87,3 +87,36 @@
 .language-switcher .language-flag img{display:block;width:25px;height:17px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25)}
 .language-switcher button[data-lang="en"]{width:57px}
 .language-switcher button[data-lang="en"] .language-code{font-size:11px}
+
+/* Refined compact language flag buttons: polished glass chips and crisp flag artwork. */
+.language-switcher{display:flex;align-items:center;gap:7px}
+.language-switcher button,
+.language-switcher button[data-lang="en"]{
+  width:49px;min-height:59px;padding:7px 5px 6px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  border:1px solid rgba(255,255,255,.22);border-radius:11px;
+  background:linear-gradient(160deg,rgba(255,255,255,.13),rgba(255,255,255,.035));
+  box-shadow:0 2px 8px rgba(0,0,0,.12);color:#fff;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease
+}
+.language-switcher button[data-lang="en"]{width:63px}
+.language-switcher .language-code,
+.language-switcher button[data-lang="en"] .language-code{font-size:12px;font-weight:800;line-height:1;letter-spacing:.025em}
+.language-switcher .language-flag{height:20px;display:flex;align-items:center;justify-content:center}
+.language-switcher .language-flag img{
+  display:block;width:29px;height:19px;object-fit:cover;border-radius:3px;
+  border:1px solid rgba(255,255,255,.65);
+  box-shadow:0 2px 5px rgba(0,0,0,.35)
+}
+.language-switcher button:hover,.language-switcher button:focus-visible{
+  background:rgba(255,255,255,.19);border-color:rgba(255,255,255,.65);transform:translateY(-2px)
+}
+.language-switcher button.active{
+  border-color:#ffc629;background:linear-gradient(160deg,rgba(255,198,41,.20),rgba(255,255,255,.06));
+  box-shadow:0 0 0 1px rgba(255,198,41,.32),0 4px 12px rgba(0,0,0,.16)
+}
+@media(max-width:900px){
+  .language-switcher{gap:8px}
+  .language-switcher button{width:52px;min-height:61px}
+  .language-switcher button[data-lang="en"]{width:67px}
+}
