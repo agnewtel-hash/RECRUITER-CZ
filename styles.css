@@ -120,3 +120,28 @@
   .language-switcher button{width:52px;min-height:61px}
   .language-switcher button[data-lang="en"]{width:67px}
 }
+
+/* Mobile: language selector always visible in the top header, not only the menu. */
+.mobile-language-switcher{display:none}
+@media(max-width:900px){
+  .nav-wrap{gap:8px}
+  .mobile-language-switcher{display:flex!important;align-items:center;gap:3px;margin:0 0 0 auto;flex:0 1 auto;min-width:0}
+  .mobile-language-switcher button,
+  .mobile-language-switcher button[data-lang="en"]{
+    width:39px;min-height:48px;padding:4px 2px;gap:4px;border-radius:8px;flex:none
+  }
+  .mobile-language-switcher button[data-lang="en"]{width:51px}
+  .mobile-language-switcher .language-code{font-size:10px}
+  .mobile-language-switcher button[data-lang="en"] .language-code{font-size:9px}
+  .mobile-language-switcher .language-flag img{width:23px;height:15px}
+  .main-nav>.language-switcher{display:none}
+  .menu-toggle{flex:none}
+}
+@media(max-width:390px){
+  .mobile-language-switcher{gap:2px}
+  .mobile-language-switcher button{width:33px;min-height:44px}
+  .mobile-language-switcher button[data-lang="en"]{width:45px}
+  .mobile-language-switcher .language-flag img{width:21px;height:14px}
+  .mobile-language-switcher .language-code{font-size:9px}
+}
+@media(min-width:901px){.mobile-language-switcher{display:none!important}}
