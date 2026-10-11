@@ -81,3 +81,9 @@
 .language-switcher .language-code{display:block;font-weight:800;font-size:13px;letter-spacing:.03em}
 .language-switcher .language-flag{display:block;font-size:19px;line-height:1;white-space:nowrap;font-weight:400}
 @media(max-width:900px){.language-switcher button{width:48px;min-height:54px}.language-switcher .language-code{font-size:14px}.language-switcher .language-flag{font-size:21px}}
+
+/* Actual SVG flag pictures below the language names. */
+.language-switcher .language-flag{display:flex;align-items:center;justify-content:center;height:19px}
+.language-switcher .language-flag img{display:block;width:25px;height:17px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25)}
+.language-switcher button[data-lang="en"]{width:57px}
+.language-switcher button[data-lang="en"] .language-code{font-size:11px}
