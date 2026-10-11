@@ -69,3 +69,9 @@
 .logo-space img{background:none!important;border:0!important;box-shadow:none!important;filter:none!important;mix-blend-mode:normal!important;object-fit:contain}
 .footer-brand .logo-space{width:76px;height:76px}
 @media(max-width:620px){.logo-space,.footer-brand .logo-space{width:52px;height:52px;flex-basis:52px}}
+
+/* Small country flags beneath the existing language labels */
+.language-switcher button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;height:43px;line-height:1.1}
+.language-switcher .language-code{display:block;font-size:13px;font-weight:800}
+.language-switcher .language-flag{display:block;font-size:17px;line-height:1}
+@media(max-width:900px){.language-switcher button{height:52px}.language-switcher .language-code{font-size:15px}.language-switcher .language-flag{font-size:21px}}
