@@ -75,3 +75,9 @@
 .language-switcher .language-code{display:block;font-size:13px;font-weight:800}
 .language-switcher .language-flag{display:block;font-size:17px;line-height:1}
 @media(max-width:900px){.language-switcher button{height:52px}.language-switcher .language-code{font-size:15px}.language-switcher .language-flag{font-size:21px}}
+
+/* Keep UA/CZ/PL/EN text as-is; show a small flag directly below each code. */
+.language-switcher button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;width:40px;min-height:48px;height:auto;padding:5px 3px;font-size:13px;line-height:1.05}
+.language-switcher .language-code{display:block;font-weight:800;font-size:13px;letter-spacing:.03em}
+.language-switcher .language-flag{display:block;font-size:19px;line-height:1;white-space:nowrap;font-weight:400}
+@media(max-width:900px){.language-switcher button{width:48px;min-height:54px}.language-switcher .language-code{font-size:14px}.language-switcher .language-flag{font-size:21px}}
