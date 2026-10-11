@@ -37,3 +37,12 @@
 .facebook-vacancies .facebook-icon{flex:none;display:grid;place-items:center;width:43px;height:43px;border-radius:11px;background:#1877f2;color:#fff;font-family:Arial,sans-serif;font-size:32px;font-weight:bold;line-height:1;padding-top:7px}
 .facebook-vacancies strong{display:block;font-size:16px}
 .facebook-vacancies small{display:block;margin-top:3px;color:#425a78;font-size:13px;line-height:1.45}
+
+
+/* Language flags in header */
+.language-switcher{display:flex;align-items:center;gap:4px;flex:none}
+.language-switcher button{display:grid;place-items:center;width:34px;height:34px;border:1px solid transparent;border-radius:7px;background:transparent;color:#fff;font-size:23px;cursor:pointer;line-height:1}
+.language-switcher button:hover,.language-switcher button:focus-visible{background:rgba(255,255,255,.16)}
+.language-switcher button.active{border-color:#ffc629;background:rgba(255,198,41,.12)}
+@media(min-width:901px){.main-nav{gap:clamp(9px,1.5vw,24px)}.main-nav>a{white-space:nowrap}.nav-wrap{gap:12px}.brand{flex:none}}
+@media(max-width:900px){.language-switcher{margin:8px 0}.language-switcher button{width:48px;height:44px;font-size:29px}}
