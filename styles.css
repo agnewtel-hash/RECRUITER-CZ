@@ -145,3 +145,13 @@
   .mobile-language-switcher .language-code{font-size:9px}
 }
 @media(min-width:901px){.mobile-language-switcher{display:none!important}}
+
+/* Mobile hero: show the entire original background photograph without cropping. */
+@media(max-width:600px){
+  .hero-bg{
+    background-size:contain;
+    background-position:center top;
+    background-color:#071e33;
+    transform:none;
+  }
+}
