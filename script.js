@@ -1,3 +1,10 @@
+// Start each fresh page opening at the top; keep normal in-page navigation working.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.addEventListener('pageshow', () => {
+  if (!window.location.hash) window.scrollTo({top:0,left:0,behavior:'instant'});
+});
+if (!window.location.hash) window.scrollTo(0,0);
+
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
