@@ -50,3 +50,6 @@
 /* Compact textual language selector */
 .language-switcher button{width:37px;font-size:13px;font-weight:800;letter-spacing:.02em}
 @media(max-width:900px){.language-switcher button{width:48px;font-size:16px}}
+
+/* Display transparent logo cleanly on the dark header and footer */
+.logo-space img{background:transparent;mix-blend-mode:normal;filter:brightness(0) invert(1)}
