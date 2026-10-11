@@ -63,3 +63,9 @@
 .logo-space img{display:block;width:100%;height:100%;object-fit:contain;filter:none!important;mix-blend-mode:normal!important;opacity:1!important;background:transparent}
 .footer-brand .logo-space{width:64px;height:64px}
 @media(max-width:620px){.logo-space,.footer-brand .logo-space{width:46px;height:46px;flex-basis:46px}}
+
+/* Final approved hero-logo presentation: white artwork on the photo, no panel */
+.logo-space{background:none!important;border:0!important;box-shadow:none!important;width:76px;height:76px;flex:0 0 76px}
+.logo-space img{background:none!important;border:0!important;box-shadow:none!important;filter:none!important;mix-blend-mode:normal!important;object-fit:contain}
+.footer-brand .logo-space{width:76px;height:76px}
+@media(max-width:620px){.logo-space,.footer-brand .logo-space{width:52px;height:52px;flex-basis:52px}}
