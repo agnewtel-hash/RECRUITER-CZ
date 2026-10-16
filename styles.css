@@ -167,3 +167,6 @@
 .vacancy-social.facebook .vacancy-social-icon{background:#1877f2}
 .vacancy-social .facebook-letter{font-family:Arial,sans-serif;font-size:29px;font-weight:800;line-height:1;padding-top:6px}
 @media(max-width:480px){.vacancy-socials{gap:8px}.vacancy-social{font-size:12px;gap:6px;padding:7px 10px 7px 7px}.vacancy-social-icon{width:30px;height:30px}.vacancy-social-icon svg{width:20px;height:20px}}
+
+/* Keep all four workers visible in the homepage hero on desktop, tablet and mobile. */
+.hero-bg{background-size:contain;background-position:center top;background-color:#071e33;transform:none}
