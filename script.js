@@ -1,9 +1,17 @@
-// Start each fresh page opening at the top; keep normal in-page navigation working.
+// Open the site at the top, including direct links with a URL fragment.
+// In-page section links still work normally after the page has loaded.
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+const startAtTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+startAtTop();
+window.addEventListener('DOMContentLoaded', startAtTop, { once: true });
+window.addEventListener('load', () => {
+  startAtTop();
+  requestAnimationFrame(startAtTop);
+}, { once: true });
 window.addEventListener('pageshow', () => {
-  if (!window.location.hash) window.scrollTo({top:0,left:0,behavior:'instant'});
+  startAtTop();
+  requestAnimationFrame(startAtTop);
 });
-if (!window.location.hash) window.scrollTo(0,0);
 
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
