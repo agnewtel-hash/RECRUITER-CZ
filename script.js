@@ -13,6 +13,13 @@ window.addEventListener('pageshow', () => {
   requestAnimationFrame(startAtTop);
 });
 
+// The RECRUITER CZ brand in the header always returns to the page top.
+document.querySelector('.site-header .brand')?.addEventListener('click', (event) => {
+  event.preventDefault();
+  if (window.location.hash) history.replaceState(null, '', window.location.pathname + window.location.search);
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+});
+
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
