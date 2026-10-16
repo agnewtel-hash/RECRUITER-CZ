@@ -155,3 +155,15 @@
     transform:none;
   }
 }
+
+/* Social media vacancy links: three compact branded icons, responsive. */
+.vacancy-socials{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 20px}
+.vacancy-social{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:8px 15px 8px 9px;border:1px solid #dce3ea;border-radius:13px;background:#fff;color:#173149;font-size:14px;font-weight:800;box-shadow:0 4px 15px rgba(8,28,48,.06);transition:transform .2s,border-color .2s,box-shadow .2s}
+.vacancy-social:hover,.vacancy-social:focus-visible{transform:translateY(-2px);border-color:#a5b4c4;box-shadow:0 8px 22px rgba(8,28,48,.13)}
+.vacancy-social-icon{display:grid;place-items:center;width:36px;height:36px;flex:none;border-radius:10px;color:#fff}
+.vacancy-social-icon svg{width:23px;height:23px}
+.vacancy-social.instagram .vacancy-social-icon{background:linear-gradient(135deg,#833ab4,#e1306c 60%,#fcb045)}
+.vacancy-social.tiktok .vacancy-social-icon{background:#111}
+.vacancy-social.facebook .vacancy-social-icon{background:#1877f2}
+.vacancy-social .facebook-letter{font-family:Arial,sans-serif;font-size:29px;font-weight:800;line-height:1;padding-top:6px}
+@media(max-width:480px){.vacancy-socials{gap:8px}.vacancy-social{font-size:12px;gap:6px;padding:7px 10px 7px 7px}.vacancy-social-icon{width:30px;height:30px}.vacancy-social-icon svg{width:20px;height:20px}}
